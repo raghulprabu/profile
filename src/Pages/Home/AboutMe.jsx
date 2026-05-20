@@ -1,28 +1,54 @@
 export default function AboutMe() {
-    return (
-      <section id="AboutMe" className="about--section">
-        <div className="about--section--img">
-          <img src="img\about-me.png" alt="About Me" />
-        </div>
-        <div className="hero--section--content--box about--section--box">
-          <div className="hero--section--content">
-            <p className="section--title">About</p>
-            <h1 className="skills-section--heading">About Me</h1>
-            <p className="hero--section-description">
-            A self motivated hardworking graduate student in computer science, I seek an work position at your Company that
-            will allow me to explore my career options in the IT sector.<br/>
-            As a computer science student i developed Excellent interpersonal skills through working on my own.<br/>
-            I am flexible and open to learning from mentors and leaders in the field.<br/>
-            </p>
-            <h1 className="skills-section--heading">Education</h1>
-            <p className="section--title">Along With My degree</p>
-            <p className="hero--section-description">
-             <b> Bachelore of Computer Science and Engineering</b><br/>
-              Coimbatore Institute of Engineering and Technology <br/>
-              <abbr>CGPA</abbr>=7.52
-            </p>
+  return (
+    <section id="AboutMe" className="about-section">
+      <div className="about-image-wrapper">
+        <div className="about-image-bg"></div>
+        <img src="./img/about-me.png" alt="About Me" className="about-image" />
+      </div>
+
+      <div className="about-content">
+        <span className="badge">About Me</span>
+
+        <h2 className="about-title">
+          Passionate <span className="gradient-text">Developer</span> & Creator
+        </h2>
+
+        <p className="about-description">
+          A self-motivated, hardworking computer science graduate seeking a
+          position that will allow me to explore my career options in the IT
+          sector. I bring excellent interpersonal skills developed through
+          independent work, and I am flexible and open to learning from mentors
+          and leaders in the field.
+        </p>
+
+        <div className="about-stats">
+          <div className="stat-card">
+            <div className="stat-number">3+</div>
+            <div className="stat-label">Projects</div>
+          </div>
+          <div className="stat-card">
+            <div className="stat-number">5+</div>
+            <div className="stat-label">Technologies</div>
+          </div>
+          <div className="stat-card">
+            <div className="stat-number">7.52</div>
+            <div className="stat-label">CGPA</div>
           </div>
         </div>
-      </section>
-    );
-  }
+
+        <div className="about-education">
+          <div className="education-icon">🎓</div>
+          <div className="education-content">
+            <div className="education-degree">
+              Bachelor of Computer Science &amp; Engineering
+            </div>
+            <div className="education-school">
+              Coimbatore Institute of Engineering and Technology
+            </div>
+            <span className="education-grade">CGPA: 7.52</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
